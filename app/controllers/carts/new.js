@@ -3,6 +3,9 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
 needs: ['pods', 'pod'],
 
+// podFake: ['Jack', 'John'],
+
+
   actions: {
     addCart: function() {
       var podsModel = this.get('controllers.pods.model');
@@ -32,17 +35,3 @@ needs: ['pods', 'pod'],
     }
   }
 });
-
-
-
-      //  pod: this.get('pod')
-
-      //
-      // var cPod = this.store.find('cart');
-      // var addpod = this.get('controllers.pods.model');
-      // console.log(newCart);
-      // console.log(cPod);
-      // console.log(addpod);
-      // // console.log(addpod.get('carts'));
-      // // addpod.get('carts').pushObject(newCart);
-      // // addpod.save();
