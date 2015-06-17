@@ -1,9 +1,8 @@
-<div class="new-carts-link">{{#link-to 'carts.new'}}Add a new cart{{/link-to}}</div>
-
+<br>
 {{outlet}}
-
+<br>
 
 
 {{#each cart in model}}
-  <div class="each-cart">{{cart.name}}: {{cart.food}}: {{cart.description}}: {{cart.rank}}: {{cart.cost}}: {{cart.pod}} </div>
+  <div class="each-cart">{{cart.name}}: {{cart.food}}: {{cart.description}}: {{cart.rank}}: {{cart.cost}}: {{cart.pod.podName}} </div>
 {{/each}}

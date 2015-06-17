@@ -6,11 +6,12 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource('carts', function() {
-    this.route('new');
-  });
+
   this.resource('pods', function() {
     this.route('new');
+    this.resource('carts', function() {
+      this.route('new');
+    });     
   });
 });
 
