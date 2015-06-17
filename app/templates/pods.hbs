@@ -1,0 +1,9 @@
+<div class="new-pods-link">{{#link-to 'pods.new'}}Add a new pod{{/link-to}}</div>
+
+{{outlet}}
+
+
+
+{{#each pod in model}}
+  <div class="each-pod">{{pod.podName}} in {{pod.podLocation}}</div>
+{{/each}}
