@@ -3,6 +3,18 @@
 <br>
 
 
+<p>All pods:</p>
 {{#each pod in model}}
-  <div class="each-pod">{{pod.podName}} in {{pod.podLocation}}</div>
+  <div class="each-pod">{{#link-to 'pod' pod.id}}{{pod.podName}} in {{pod.podLocation}}{{/link-to}}</div>
 {{/each}}
+
+
+
+
+<!-- <p>All carts:</p>
+{{#each pod in model}}
+  {{pod.podName}}:
+  {{#each cart in pod.carts}}
+    <li>{{cart.name}}</li>
+  {{/each}}
+{{/each}} -->

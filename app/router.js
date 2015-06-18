@@ -9,9 +9,10 @@ Router.map(function() {
 
   this.resource('pods', function() {
     this.route('new');
+    this.resource('pod', {path: ':pod_id'});
     this.resource('carts', function() {
       this.route('new');
-    });     
+    });
   });
 });
 

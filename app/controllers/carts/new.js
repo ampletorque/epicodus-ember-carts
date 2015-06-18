@@ -25,6 +25,7 @@ export default Ember.Controller.extend({
       newCart.save().then(function() {
         // var podModel = podsModel.findBy('podName', thisPod);
         // podModel.get('carts').pushObject(newCart);
+        debugger;
         thisPod.get('carts').pushObject(newCart);
         thisPod.save();
         // podModel.save();
