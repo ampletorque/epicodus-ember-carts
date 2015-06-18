@@ -20,6 +20,7 @@ export default Ember.Controller.extend({
         description: this.get('description'),
         rank: this.get('rank'),
         cost: this.get('cost'),
+        pictures: [this.get('picture')],
         pod: this.get('pod1')
       });
       newCart.save().then(function() {

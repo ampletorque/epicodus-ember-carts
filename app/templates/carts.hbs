@@ -4,5 +4,5 @@
 
 
 {{#each cart in model}}
-  <div class="each-cart">{{cart.name}}: {{cart.food}}: {{cart.description}}: {{cart.rank}}: {{cart.cost}}: {{cart.pod.podName}} </div>
+  <div class="each-cart">{{#link-to 'cart' cart.id}}{{cart.name}}{{/link-to}}: {{cart.food}}: {{cart.description}}: {{cart.rank}}: {{cart.cost}}: {{cart.pod.podName}} </div>
 {{/each}}
