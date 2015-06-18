@@ -5,6 +5,7 @@ export default Ember.Route.extend({
     // return Ember.RSVP.hash({
       // carts: this.store.find('cart'),
       // pods: this.store.find('pod')
+// )
   return this.store.find('cart');
 }
 
